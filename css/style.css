@@ -1,0 +1,105 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  margin: 10rem auto;
+  max-width: 60rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+img {
+  width: 30rem;
+  height: 100%;
+}
+.info {
+  background-color: #fff;
+  padding: 30px;
+}
+.info h3 {
+  font-size: 1.2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+.info h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: hsl(212, 21%, 14%);
+  line-height: 1;
+}
+.details {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.8;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.new-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.old-price {
+  color: hsl(158, 36%, 37%);
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  text-align: center;
+}
+button {
+  display: block;
+  font-size: 1.4rem;
+  background-color: hsl(158, 36%, 37%);
+  padding: 1.4rem 6rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-right: 1rem;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(157, 35%, 20%);
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 23.5em) {
+  html {
+    font-size: 50%;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .container {
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
